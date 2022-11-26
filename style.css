@@ -56,7 +56,16 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Red Hat Display', sans-serif;
     font-size: var(--fs-400);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+@media (min-width:600px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
 }
 
 /*
@@ -122,9 +131,11 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    background-color: white;
 }
 
 .card-content {
+
     padding: 0 2.5rem 2.5rem 2.5rem;
     display: flex;
     flex-direction: column;
